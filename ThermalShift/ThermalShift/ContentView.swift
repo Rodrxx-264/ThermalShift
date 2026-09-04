@@ -1,21 +1,28 @@
-//
-//  ContentView.swift
-//  ThermalShift
-//
-//  Created by Rodrigo Imeri on 3/09/26.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @State private var temperature = 67
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack (spacing: 20){
+            Text("ThermalShift")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            
+            Text("Intel Mac")
+                .font(.title3)
+                .foregroundStyle(.secondary)
+            
+            Text("\(temperature)°C")
+                .font(.system(size: 64, weight: .bold))
+            
+            Text("CPU Temperature")
+                .foregroundStyle(.secondary)
+            
+            Button("Simulate Temperature") {
+                            temperature += 1
+                        }
         }
-        .padding()
+        .padding(40)
     }
 }
 
