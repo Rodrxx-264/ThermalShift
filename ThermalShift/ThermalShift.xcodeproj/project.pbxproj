@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B0A11ED0B000000000000001 /* VoltageShift.kext in Resources */ = {isa = PBXBuildFile; fileRef = F0A11ED0C000000000000001 /* VoltageShift.kext */; };
+		B0A11ED0B000000000000002 /* voltageshift in Resources */ = {isa = PBXBuildFile; fileRef = F0A11ED0C000000000000002 /* voltageshift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		23E2A0C5304A52B80089296E /* ThermalShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThermalShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A11ED0C000000000000001 /* VoltageShift.kext */ = {isa = PBXFileReference; lastKnownFileType = wrapper.cfbundle; path = VoltageShift.kext; sourceTree = "<group>"; };
+		F0A11ED0C000000000000002 /* voltageshift */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = voltageshift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				23E2A0C7304A52B80089296E /* ThermalShift */,
+				A0A11ED0A000000000000001 /* ExternalResources */,
 				23E2A0C6304A52B80089296E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +51,16 @@
 				23E2A0C5304A52B80089296E /* ThermalShift.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A0A11ED0A000000000000001 /* ExternalResources */ = {
+			isa = PBXGroup;
+			children = (
+				F0A11ED0C000000000000001 /* VoltageShift.kext */,
+				F0A11ED0C000000000000002 /* voltageshift */,
+			);
+			name = ExternalResources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +127,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A11ED0B000000000000002 /* voltageshift in Resources */,
+				B0A11ED0B000000000000001 /* VoltageShift.kext in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +271,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -281,7 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
